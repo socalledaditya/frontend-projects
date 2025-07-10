@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors - Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="game-heading">
+            <h1 id="game-name">Rock Paper Scissors</h1>
+        </div>
+        <div class="game-container">
+            <div class="score-card">
+                <div class="user-score-card">
+                    <p id="user-score" class="score">0</p>
+                    <p class="player">You</p>
+                </div>
+                <div class="comp-score-card">
+                    <span id="comp-score" class="score">0</span>
+                    <p class="player">Comp</p>
+                </div>
+            </div>
+
+            <div class="user-choices">
+                <div class="choice-box"><i id="rock" class="fa-regular fa-hand-back-fist choice"></i></div>
+                <div class="choice-box"><i id="paper" class="fa-regular fa-hand choice"></i></div>
+                <div class="choice-box"><i id="scissors" class="fa-regular fa-hand-scissors choice"></i></div>
+            </div>
+
+            <div class="status-text-box">
+                <p id="status-text">Play your move</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
