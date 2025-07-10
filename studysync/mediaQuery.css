@@ -1,0 +1,44 @@
+@media screen and (max-width: 1330px) {
+    .responsive-margin {
+        margin-inline: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    #contact-us-btn {
+        display: none;
+    }
+
+    #hamburger-btn {
+        display: block;
+    }
+
+    .main-content {
+        margin-top: 2rem;
+    }
+
+    .hero-section {
+        flex-direction: column;
+    }
+
+    .companies .companies-headline {
+        font-size: 1rem;
+    }
+
+    .companies .companies-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .newsletter-content .news-left-img {
+        width: 100%;
+    }
+
+    .news-right {
+        width: 100%;
+    }
+}
