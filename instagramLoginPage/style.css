@@ -1,0 +1,145 @@
+* {
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://images.unsplash.com/photo-1633675254386-dc5bb4279d56?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.bodyBox {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parentBox {
+    height: 480px;
+    width: 340px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    background-color: rgba(240, 248, 255);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    left: 300px;
+    animation: move 1s ease-in-out 0s infinite alternate;
+}
+
+.circle-drop {
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    top: -50%;
+    border-radius: 50%;
+    background-color: #E1306C;
+}
+
+.parentContent {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    gap: 20px;
+}
+
+.login-top-part {
+    height: 115px;
+    width: 100%;
+    /* background-color: #E1306C; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(254, 254, 254);
+}
+
+.logo p {
+    margin-left: 10px;
+    padding-bottom: 2px;
+
+}
+
+input {
+    width: 210px;
+    height: 35px;
+    border-radius: 4px;
+    border: 2px solid pink;
+    background-color: white;
+    padding-left: 10px;
+}
+
+.btn {
+    width: 222px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    color: white;
+    background-color: #9d0e3d;
+}
+
+.or {
+    color: #eadddd;
+    margin-bottom: 13px;
+}
+
+.div-login-by-fb {
+    width: 200px;
+    display: flex;
+    margin-top: 20px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.div-login-by-fb i {
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+.forgot-pswd {
+    text-decoration: none;
+    color: rgb(73, 45, 100);
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.btn:hover {
+    background-color: #f8729f;
+}
+
+input:hover {
+    border: rgb(171, 153, 153) 2px solid;
+}
+
+@keyframes move {
+    from {
+        top: -10px
+    }
+
+    to {
+        top: 20px
+    }
+}
+
+.parentBox:hover {
+    animation: none;
+    transition: 0.5s;
+}
