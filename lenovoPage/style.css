@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: poppins;
+}
+
+header {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f1f1;
+    align-items: center;
+}
+
+.lenovo {
+    font-weight: 600;
+    margin-left: 1.5rem;
+}
+
+header .referals {
+    display: flex;
+    gap: 1rem;
+    margin-right: 1.5rem;
+}
+
+header .referals a {
+    color: black;
+    font-size: 0.9rem;
+}
+
+header .referals i {
+    margin-top: 3px;
+}
+
+header .referals a:hover {
+    color: red;
+}
+
+.nav {
+
+    height: 130px;
+    background-color: rgba(0, 255, 255, 0.096);
+    border-bottom: #dadada 2px solid;
+}
+
+.nav .nav-bar1 {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1.5rem;
+}
+
+.nav .nav-bar1 .logo {
+    height: 50%;
+}
+
+.nav .nav-bar1 .search-bar {
+    height: 60%;
+    border: 3px solid black;
+    border-radius: 12px;
+    background-color: rgb(249, 238, 238);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav .search-bar input {
+    height: 100%;
+    width: 700px;
+    padding: 0 1rem;
+    background-color: transparent;
+}
+
+.nav .search-bar i {
+    padding: 10px;
+}
+
+.nav .nav-bar1 .signin-create {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.95rem;
+}
+
+.nav .nav-bar1 .signin-create i {
+    font-size: 1.3rem;
+}
+
+.location-cart {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+}
+
+.nav .nav-bar1-right {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav .nav-bar2 {
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 1.5rem;
+    font-size: 0.95rem;
+}
+
+.nav-bar2 .user-links1 a {
+    color: black;
+}
+
+.nav-bar2 .user-links1 a:hover,
+.nav-bar2 .user-links2 a:hover {
+    font-weight: 500;
+}
+
+.nav .nav-bar2 .user-links1 {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-bar2 .user-links2 {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-bar2 .user-links2 a {
+    color: black;
+}
+
+.nav-bar2 .user-links2 .business {
+    border-left: #dadada 2.5px solid;
+    padding: 0 1rem;
+}
+
+.nav-bar2 .user-links2 .business {
+    border-right: #dadada 2.5px solid;
+    padding: 0 1rem;
+}
+
+
+.home-img {
+    height: 600px;
+    background-image: url(https://static.lenovo.com/ww/img/dc/solutions/ai/lenovo-data-center-solutions-ai-hero-banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.home-img .div-left {
+    width: 30%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin-left: 5rem;
+}
+
+
+.home-img .div-left h1 {
+    font-size: 4rem;
+}
+
+.home-img .div-left span {
+    margin: 1rem 0;
+    color: #dadada;
+}
+
+.home-img .div-left p {
+    color: #dadada;
+    text-wrap: wrap;
+}
+
+.div-left .btn button {
+    height: 4rem;
+    padding: 1rem 1.5rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 4px;
+    margin-top: 1.5rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.div-left .btn button:hover {
+    color: black;
+    background-color: white;
+}
+
+#mob-menu {
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: none;
+}
