@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            padding: 1rem;
+            width: 100vw;
+            background-color: black;
+            font-size: 20px;
+            font-family: monospace;
+            color: rgb(102, 151, 4);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <p>Initializing Hacking <span>...</span></p>
+    <p>Reading your Files <span>...</span></p>
+    <p>Password files Detected <span>...</span></p>
+    <p>Sending all passwords and personal files to server <span>...</span></p>
+    <p>Cleaning up <span>...</span></p> -->
+
+    <!-- Create a hacking simulator which has green background and it shows these messages with random delay of 1 to 7 seconds 
+    
+    Initializing Hacking...
+    Reading your Files...
+    Password files Detected...
+    Sending all passwords and personal files to server...
+    Cleaning up...
+
+    The three dots must blink so that it looks like a real terminal
+    -->
+    <script>
+
+        const texts = [
+            "Initializing Hacking...",
+            "Reading your Files...",
+            "Password files Detected...",
+            "Sending all passwords and personal files to server...",
+            "Cleaning up...",
+            "initiating controls...",
+            "Bypassing security protocols...",
+            "Establishing secure connection...",
+            "Decrypting data packets...",
+            "Accessing mainframe...",
+            "Retrieving user credentials...",
+            "Scanning for vulnerabilities...",
+            "Compiling exploit code...",
+            "Injecting payload...",
+            "Gaining elevated privileges...",
+            "Creating backdoor access...",
+            "Transferring data to external server...",
+            "Executing command sequence...",
+            "Analyzing system defenses...",
+            "Downloading sensitive files...",
+            "Disabling firewall protections...",
+            "Clearing logs...",
+            "Executing silent mode...",
+            "Monitoring network traffic...",
+            "Verifying successful breach...",
+            "Initiating self-destruct protocol..."
+        ]
+
+        function randomTime() {
+            let time = (Math.random() * 3) + 1;
+            time = Math.floor(time)
+            return time
+        }
+
+        function makingDots(intime, parentEle) {
+            const span = document.createElement('span')
+            parentEle.append(span)
+            setTimeout(() => {
+                span.innerHTML = "";
+                clearInterval(addition)
+                clearInterval(addDot)
+            }, intime)
+            let addition = setInterval(() => {
+                span.innerHTML = "";
+                let addDot = setInterval(() => {
+                    span.innerHTML += ".";
+                }, 200)
+            }, 650);
+        }
+
+        async function addText() {
+            for (const text of texts) {
+                let time = randomTime() * 1000
+                await new Promise((resolve, reject) => {
+                    let newPara = document.createElement("p")
+                    document.querySelector('body').append(newPara)
+                    makingDots(time, newPara)
+                    setTimeout(() => {
+                        newPara.innerHTML = ">>> " + text
+                        resolve("Done Bhai!!")
+                    }, time)
+                }
+                )
+            }
+        }
+        addText()
+
+
+
+    </script>
+
+</body>
+
+</html>
