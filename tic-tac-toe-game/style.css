@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: "Inter", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --light-text-color: white;
+    --dark-text-color: #222;
+    --light-bg-color: #eee;
+    --dark-bg-color: #2d3047;
+    --accent-color: #2d3047;
+}
+
+body {
+    background-color: var(--dark-bg-color);
+    color: var(--light-text-color);
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    padding-inline: 2rem;
+    transition: all 0.1s linear;
+    background: #419d78;
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    box-shadow: 0 0 0 2px #ffffff;
+}
+
+.main-container {
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Game-page ------------ */
+.game-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    position: absolute;
+    visibility: hidden;
+    transform: scale(0.1);
+    transition: transform 0.1s;
+}
+
+.game-page .game-heading {
+    font-size: 3rem;
+}
+
+.field-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.field {
+    width: 9rem;
+    height: 9rem;
+    background: var(--light-bg-color);
+    transition: background-color linear 0.1s;
+    color: var(--dark-text-color);
+    font-size: 4rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.field:hover {
+    background: #419d78;
+}
+
+/* show winner ------------ */
+.show-winner-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 4rem;
+    background-color: #222;
+    border-radius: 2rem;
+    transform: scale(0.1);
+    transition: transform 0.2s;
+    visibility: hidden;
+    position: absolute;
+}
+
+.winner-trophy {
+    font-size: 10rem;
+    animation: zoom-in-out 1.5s alternate linear infinite;
+}
+
+.winner-para {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+#winner-symbol {
+    font-weight: bold;
+}
+
+.restart-btn {
+    margin-top: 1rem;
+}
+
+@keyframes zoom-in-out {
+    from {
+        scale: 1;
+    }
+    to {
+        scale: 1.1;
+    }
+}
+
+/* Draw match ----------- */
+.draw-match-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    background-color: #222;
+    padding: 4rem;
+    border-radius: 2rem;
+    position: absolute;
+    visibility: hidden;
+    transform: scale(0.1);
+    transition: transform 0.2s;
+}
+
+.draw-img {
+    height: 300px;
+    animation: zoom-in-out 0.5s alternate linear infinite;
+}
+
+.draw-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.draw-para {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+@keyframes zoom-in-out-2 {
+    from {
+        scale: 1;
+    }
+    to {
+        scale: 1.1;
+    }
+}
+
+.popup {
+    transform: scale(1);
+    visibility: visible;
+}
+
+@media screen and (max-width: 1024px) {
+    .field {
+        width: 7rem;
+        height: 7rem;
+    }
+    .game-page .game-heading {
+        font-size: 2rem;
+    }
+    .btn {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .show-winner-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        padding: 3rem;
+        text-align: center;
+    }
+    .winner-trophy {
+        font-size: 8rem;
+    }
+    .winner-para {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    .draw-match-container {
+        gap: 4rem;
+        padding: 3rem;
+        border-radius: 1rem;
+    }
+
+    .draw-img {
+        height: 250px;
+    }
+
+    .draw-para {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+}
+@media screen and (max-width: 425px) {
+    .field {
+        width: 5rem;
+        height: 5rem;
+    }
+    .game-page .game-heading {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe: Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <!-- game page -->
+        <div class="game-page popup">
+            <div>
+                <h2 class="game-heading">Tic Tac Toe</h2>
+            </div>
+            <div class="field-container">
+                <div class="field"></div>
+                <div class="field"></div>
+                <div class="field"></div>
+                <div class="field"></div>
+                <div class="field"></div>
+                <div class="field"></div>
+                <div class="field"></div>
+                <div class="field"></div>
+                <div class="field"></div>
+            </div>
+            <button class="restart-btn btn">Reset Game</button>
+        </div>
+
+        <!-- to show-winner -->
+        <div class="show-winner-container">
+            <i class="fa-solid fa-trophy winner-trophy"></i>
+            <div class="winner-content">
+                <p class="winner-para">Congrats! <span id="winner-symbol"></span> won the game!</p>
+                <button class="restart-btn btn">Play Again</button>
+            </div>
+        </div>
+
+        <!-- in case draw! -->
+        <div class="draw-match-container">
+            <img src="assets/videogame.png" alt="" class="draw-img">
+            <div class="draw-content">
+                <p class="draw-para">It's a draw !</p>
+                <button class="restart-btn btn">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
