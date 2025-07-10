@@ -1,0 +1,112 @@
+@media screen and (max-width: 1025px) {
+
+    .nav-menus {
+        display: none;
+    }
+
+    .hero-img1,
+    .hero-img2 {
+        display: none;
+    }
+
+    .hero-section {
+        justify-content: center;
+        transition: 0.2s ease;
+    }
+
+    .cta-try4free img {
+        width: 300px;
+        transition: 0.2s ease;
+    }
+
+    .cta-try4free .content {
+        margin-inline: 20px;
+        transition: 0.2s ease;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .cta-try4free img {
+        display: none;
+    }
+
+    .signLog-in {
+        display: none;
+    }
+
+    .nav-elements .toggle {
+        display: block;
+        transition: 0.2s ease;
+    }
+
+    .feature-heading h1 {
+        text-align: center;
+        transition: 0.2s ease;
+    }
+}
+
+
+
+@media screen and (max-width: 479px) {
+    .feature-heading h1 {
+        font-size: 1.5rem;
+        text-align: center;
+        transition: 0.2s ease;
+    }
+
+    .hero-content {
+        width: 90%;
+        transition: 0.2s ease;
+    }
+
+    h1 {
+        font-size: 2rem;
+        transition: 0.2s ease;
+    }
+
+    .hero-content h4 {
+        font-weight: 400;
+        transition: 0.2s ease;
+    }
+
+    .nav-elements {
+        justify-content: space-between;
+        padding: 30px 50px;
+        transition: 0.2s ease;
+    }
+
+    .logo {
+        height: 35px;
+        transition: 0.2s ease;
+    }
+
+    .nav-elements .toggle {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        transition: 0.2s ease;
+    }
+
+    .f1-box1,
+    .grouped-box {
+        margin-top: 40px;
+        transition: 0.2s ease;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    
+    .section-box {
+        width: 300px;
+        transition: 0.2s ease;
+    }
+
+    .features-1 img {
+        width: 250px;
+        transition: 0.2s ease;
+    }
+
+    .feature-heading p {
+        width: 290px;
+        transition: 0.2s ease;
+    }
+}
