@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --primary-text-color: white;
+    --secondary-text-color: black;
+    --accent-color-dark: #094074;
+    --accent-color: #FE9000;
+    --light-bg-color: #5ADBFF;
+    --dark-bg-color: #3C6997;
+
+    --pri-font: 'Poppins', sans-serif;
+    --sec-font: 'Roboto', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+nav {
+    overflow-x: none;
+    width: 100vw;
+    min-height: 80px;
+    background: var(--dark-bg-color);
+    padding-inline: 8rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: -5px 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+#navList {
+    min-height: 80px;
+    list-style: none;
+    font-family: var(--pri-font);
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--secondary-text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#brandName {
+    font-family: var(--pri-font);
+    color: var(--primary-text-color);
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+#navLinks {
+    display: flex;
+}
+
+
+#navLinks a {
+    color: var(--primary-text-color);
+    padding-inline: 1rem;
+    min-height: 80px;
+    line-height: 80px;
+    transition: color .2s ease-in-out;
+}
+
+#navLinks a:hover {
+    color: #222;
+}
+
+
+/* main */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: 8rem;
+}
+
+.recipe {
+    margin-block: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    color: var(--secondary-text-color);
+    font-family: var(--pri-font);
+    display: flex;
+    gap: 2rem;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    animation: scaleUp 2s ease-in-out .3s infinite alternate;
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(100%);
+    }
+
+    to {
+        transform: scale(102%);
+    }
+}
+
+.recipe .recipe-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-inline: 2rem;
+}
+
+.recipe .recipe-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s linear;
+    animation: rotateClockwise 30s linear .3s infinite;
+}
+
+.recipe .recipe-img:hover {
+    transform: scale(150%);
+}
+
+@keyframes rotateClockwise {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.recipe .recipe-list {
+    list-style: disc;
+    padding-left: 1.2rem;
+}
+
+.recipe .view-recipe {
+    color: var(--secondry-text-color);
+    padding-inline: 1rem;
+    border-radius: .5rem;
+    font-family: var(--pri-font);
+    font-size: .8rem;
+}
+
+.footer-content {
+    width: 100vw;
+    background-color: var(--dark-bg-color);
+    text-align: center;
+    padding: 1rem;
+    font-family: var(--pri-font);
+    font-weight: 500;
+    color: var(--primary-text-color);
+}
+
+#next-page-btn{
+    font-size: 1.2rem;
+    font-family: var(--pri-font);
+    color: var(--accent-color);
+    padding: 1rem;
+}
